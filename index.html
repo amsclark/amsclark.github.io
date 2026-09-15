@@ -1,18 +1,101 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Clark</title>
+<meta name="description" content="Alex Clark: information security architect, software developer, and retired attorney. Builds software for civil legal aid programs through Clark Management Consulting.">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/771499?s=64">
+<meta property="og:title" content="Alex Clark">
+<meta property="og:description" content="Information security architect, software developer, retired attorney. Software for civil legal aid.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://amsclark.github.io/">
+<style>
+  :root {
+    --ink: #1c2230; --ink-soft: #4a5468; --ink-faint: #7c8598;
+    --paper: #f7f5f0; --paper-2: #fff; --line: #dcd8cf;
+    --navy: #243b6b; --accent: #b5542a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--navy); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.15; margin: 0 0 .4em; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(2rem, 5vw, 2.8rem); }
+  h2 { font-size: 1.5rem; margin-top: 0; }
+  p { margin: 0 0 1em; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 64px; }
+  .head { display: flex; gap: 22px; align-items: center; margin-bottom: 36px; }
+  .head img { width: 96px; height: 96px; border-radius: 50%; border: 1px solid var(--line); flex: none; }
+  .tagline { color: var(--ink-soft); font-size: 1.05rem; margin: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 44px; }
+  .links a { display: inline-block; padding: .5em 1em; border: 1px solid var(--line); border-radius: 6px; background: var(--paper-2); text-decoration: none; font-size: .95rem; }
+  .links a:hover { border-color: var(--navy); }
+  .links a.primary { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .links a.primary:hover { background: #182a4e; }
+  section { padding: 28px 0; border-top: 1px solid var(--line); }
+  ul { padding-left: 1.2em; margin: 0 0 1em; }
+  li { margin-bottom: .45em; }
+  .muted { color: var(--ink-faint); font-size: .92rem; }
+  dl { margin: 0; }
+  dt { font-weight: 600; }
+  dd { margin: 0 0 .8em; color: var(--ink-soft); }
+  footer { color: var(--ink-faint); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 24px; }
+  @media (max-width: 520px) { .head { flex-direction: column; align-items: flex-start; } }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <div class="head">
+    <img src="https://avatars.githubusercontent.com/u/771499?s=192" alt="" width="96" height="96">
+    <div>
+      <h1>Alex Clark</h1>
+      <p class="tagline">Information security architect, software developer, retired attorney.</p>
+    </div>
+  </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <p>I lead security architecture at an insurance company by day. Outside of that, through <a href="https://clarkmanagementconsulting.com">Clark Management Consulting</a>, I build and maintain software for civil legal aid programs: case management, website chatbots, guided interviews and document assembly, online intake, and court-record tools. I have done that work since 2017.</p>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+  <p>Before moving into technology I practiced law at Legal Aid of Nebraska, representing low-income Nebraskans in civil matters. I then ran that program's IT for four years, which is where most of the software I still maintain got started. I care about access to justice and free and open source software.</p>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  <div class="links">
+    <a class="primary" href="https://clarkmanagementconsulting.com">Clark Management Consulting</a>
+    <a href="https://www.linkedin.com/in/alexmsclark">LinkedIn</a>
+    <a href="https://github.com/amsclark">GitHub</a>
+    <a href="https://gitlab.com/amsclark">GitLab</a>
+    <a href="mailto:amsclark@gmail.com">Email</a>
+  </div>
+
+  <section>
+    <h2>Work</h2>
+    <dl>
+      <dt>Sr. IT Security Architect II, National Indemnity Company</dt>
+      <dd>2022 to present. Security engineering, then architecture.</dd>
+      <dt>President, Clark Management Consulting</dt>
+      <dd>2017 to present. Software for legal aid programs, law firms, and human service non-profits. Lead developer of Open Case Management. See the <a href="https://clarkmanagementconsulting.com/#portfolio">portfolio</a> for what is in use today.</dd>
+      <dt>Legal Aid of Nebraska</dt>
+      <dd>2013 to 2018. Associate attorney, then IT manager and Director of IT.</dd>
+    </dl>
+    <p class="muted">Certifications in information security, IT audit, and project management from (ISC)&sup2;, ISACA, PMI, CompTIA, and Microsoft. Full history on <a href="https://www.linkedin.com/in/alexmsclark">LinkedIn</a>.</p>
+  </section>
+
+  <section>
+    <h2>Open source</h2>
+    <ul>
+      <li><a href="https://github.com/amsclark/ocm">Open Case Management</a>: free, GPL v2 case management for legal aid programs. Also known as Pika and Ciprocity. <a href="https://amsclark.github.io/ocm/">Project page</a>.</li>
+      <li><a href="https://github.com/amsclark/docassemble-BankruptcyClinic">Chapter 7 Bankruptcy Clinic</a>: a docassemble interview that assembles a complete, filing-ready Chapter 7 petition packet.</li>
+      <li><a href="https://github.com/amsclark/Napier3">Napier</a>: builds a criminal record spreadsheet from Iowa Courts Online and applies Iowa's expungement and court-debt rules.</li>
+      <li><a href="https://github.com/amsclark/NECourtsE-ServicesEvictionScraper">Nebraska Eviction Scraper</a>: watches for new eviction filings so tenant advocates can reach defendants before their hearing.</li>
+      <li><a href="https://github.com/amsclark/va_courts_chatbot">Marshall</a>, Moose, and Sunflower: website chatbots for legal aid and court self-help sites, built on Dialogflow.</li>
+    </ul>
+    <p class="muted">More on <a href="https://github.com/amsclark?tab=repositories">GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>Writing here is my own and does not speak for my employer or clients.</p>
+  </footer>
+
 </div>
+</body>
+</html>
